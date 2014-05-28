@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
     <title>Github Flow Sample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <h1>寿司</h1>
+    <h1 id="title" style="text-decoration:underline;">寿司</h1>
     <h2>メニュー</h2>
     <h2>購入サイト候補</h2>
     <a href="http://www.ginsara.jp/store/takanawa_detail.html">銀のさら　高輪店</a>
+
+    <script>
+(function($){
+ $('#title').on('click', function(){
+   $(this).text('寿司はメニューから選んでね');
+ });
+})(jQuery);
+    </script>
   </body>
 </html>
